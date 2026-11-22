@@ -1,5 +1,7 @@
 # rosz-ui
 
+> **已并入 rosz 仓库**: 自 0.4.0 起本包在 [erban-robotics/rosz](https://github.com/erban-robotics/rosz) 的 [`packages/rosz-ui`](https://github.com/erban-robotics/rosz/tree/main/packages/rosz-ui) (提交历史一并搬入), 版本号与 rosz 统一, tgz 挂在 rosz 的 Release: `"@erban-robotics/rosz-ui": "https://github.com/erban-robotics/rosz/releases/download/v0.4.0/erban-robotics-rosz-ui-0.4.0.tgz"`. 开发期 alias 改指 `~/projects/rosz/packages/rosz-ui/src`. 本仓库不再更新, 0.3.0 及以前的 Release 保留; issue 已转到 rosz.
+
 rosz 的共享可视化 UI 包: 数据源状态, 播放时钟与回放 / 实时查看面板, 供 ADP, erban-caring webapp 与 rosz 查看器共用. 从 ADP 回放 (`frontend/src/replay`, `views`) 抽取, ADP 牵头开发.
 
 - 接缝在包内的前端状态: 适配器 (ADP, webapp, 查看器) 写通道目录与样本, 订阅状态发出的需求窗口; 面板只读状态与播放时钟. 状态, 时钟为纯 TS 对象, React 侧只有 Provider, 钩子与面板
